@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style</title>
+  <link rel="icon" href="images/logo.png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="main_container">
+  
+<div class="nav_section">
+<div class="nav_left">
+<img src="images/logo-removebg-preview.png" alt="" style="width: 100px;">
+</div>
+<div class="nav_center">
+  <a href="index.html" class="nav_center_content">HOME</a>
+  <a href="products.html" class="nav_center_content">SHOP</a>
+  <a href="aboutus.html" class="nav_center_content">ABOUT US</a>
+  <a href="contactus.html" class="nav_center_content">CONTACT</a>
+</div>
+<div class="nav_right">
+  <input type="text" id="searchbox" placeholder="Enter Product Name" style="padding-left: 10px;background-color: transparent;border: 1px solid rgba(0, 0, 0, 0.457);display: none;">
+  <img class="searchicon" src="images/search icon.png" alt="" style="width: 22px; height: 22px;" onclick="searchboxshow()">
+ <a href="cart.html"> <img src="images/shop icon.png" alt="" style="width: 25px; height: 25px;"></a>
+</div>
+</div>
+
+
+  
+
+  
+    <div class="title_section">
+      <div class="title_section_left">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500"   style="width: 500px;height: 500px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images/title image.png" alt="First slide" style="width: 570px;height: 500px;">
+            </div>
+            <div class="carousel-item ">
+              <img class="d-block w-100" src="images/social6-removebg-preview.png" alt="Second slide" style="width: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images/social4-removebg-preview.png" alt="Third slide" style="width: 500px;">
+            </div>
+          </div>
+        </div>
+        <!-- <img src="images/title image.png" alt="" style="width: 500px;"> -->
+      </div>
+      <div class="title_section_right">
+        <h1 style=" color:sienna;">LIVE YOUR LIFE <br>IN COLOR</h1>
+        <p style=" margin-top: 20px;"> Colorful designs spark up your style and can trigger different emotions. <br>
+          Discover these distinctive styles and how their colors  can radiate your positive vibes to the world.</p>
+          <a href="products.html"><button class="btn btn-primary" style="width: fit-content;">SHOP NOW</button></a>
+      </div>
+    </div>
+  
+
+<div class="whycontact_section">
+  
+    <h1 style="align-self: center;text-decoration: underline;">Why Contact Us</h1>
+    <div style="text-align: center;">
+      <img src="images/free icon.png" alt="" style="height: 100px;width: 100px;">
+      
+      <h1>FREE SHIPPING</h1>
+      <img src="images/star.png" alt="">
+      <p style="font-weight: bold;">ENJOY FREE SHIPPING ON All ORDERS- <br>NO MINIMUM PURCHASE REQUIRED.</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="images/support icon.png" alt="" style="height: 100px;width: 100px;">
+      
+      <h1>24/7 SUPPORT</h1>
+      <img src="images/star.png" alt="">
+      <p style="font-weight: bold;">OUR TEAM IS AVAILABLE 24/7 TO HELP<br>WITH ANY QUESTIONS OR CONCERNS.</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="images/money icon.png" alt="" style="height: 100px;width: 100px;">
+      
+      <h1>MONEY BACK</h1>
+      <img src="images/star.png" alt="">
+      <p style="font-weight: bold;">WE OFFER 100% MONEY BACK-<br>GUARANTY FOR YOUR SATISFACTION.</p>
+    </div>
+      </div>
+
+
+
+<div class="product_section">
+  
+
+<div class="product_section_content" style="align-self: center;">
+
+  
+<h2 style="font-size: 50px;">The Latest Trends <br> In Fashion</h2>
+<p style="font-size: 20px;">Fashion is part of the daily air and it changes <br> all the time, with all the events.</p>
+<a href="products.html"><button class="btn btn-primary" style="width: fit-content;">SHOP</button></a>
+</div>
+<div class="product_section_content">
+  <a href="productdesc.html"><img class="image_action" src="images/shirt1.png" alt="" style="width: 350px;height: 350px;"></a>
+<h4>Men Slim Fit Solid Spread <br> Collar Casual Shirt</h4>
+<h4 style="font-weight: bold;">₹1,637</h4>
+<div style="position: relative;bottom:20px;">
+  <button class="btn btn-primary" style="width: fit-content;" onclick="addtocart1()">ADD TO CART</button>
+  <img src="images/5star-removebg-preview.png" alt="" style="margin-left: 20px;width: 130px;">
+  <h4 id="product1" style="color: green;display: none;">Item Added To Cart</h4>
+</div>
+
+</div>
+<div class="product_section_content">
+  <a href="productdesc.html"><img class="image_action" src="images/shirt2.png" alt="" style="width: 350px;height: 350px;"></a>
+  <h4>Men Regular Fit Printed  <br>Spread Collar Casual Shirt</h4>
+  <h4 style="font-weight: bold;">₹279</h4>
+  <div style="position: relative;bottom:20px;">
+    <button class="btn btn-primary" style="width: fit-content;" onclick="addtocart2()">ADD TO CART</button>
+    <img src="images/5star-removebg-preview.png" alt="" style="margin-left: 20px;width: 130px;">
+    <h4 id="product2" style="color: green;display: none;">Item Added To Cart</h4>
+  </div>
+</div>
+
+</div>
+<div class="product_section_two">
+  
+
+  <div class="product_section_content">
+    <a href="productdesc.html"><img class="image_action" src="images/tshirt1.png" alt="" style="width: 350px;height: 350px;"></a>
+  <h4>Men Typography Round Neck <br> Cotton Blend Grey T-Shirt</h4>
+  <h4 style="font-weight: bold;">₹199</h4>
+  <div style="position: relative;bottom:20px;">
+    <button class="btn btn-primary" style="width: fit-content;" onclick="addtocart3()">ADD TO CART</button>
+    <img src="images/5star-removebg-preview.png" alt="" style="margin-left: 20px;width: 130px;">
+    
+    <h4 id="product3" style="color: green;display: none;">Item Added To Cart</h4>
+  </div>
+  </div>
+  <div class="product_section_content">
+   
+    <a href="productdesc.html"> <img class="image_action" src="images/tshirt2.png" alt="" style="width: 350px;height: 350px;"></a>
+  <h4>Men Printed, Typography Round <br> Neck Cotton Blend Black T-Shirt</h4>
+  <h4 style="font-weight: bold;">₹100</h4>
+  <div style="position: relative;bottom:20px;">
+    <br>
+    <button class="btn btn-primary" style="width: fit-content;" onclick="addtocart4()">ADD TO CART</button>
+    <img  src="images/4star-removebg-preview.png" alt="" style="margin-left: 20px;width: 110px;">
+    <br><br>
+    <h4 id="product4" style="color: green;display: none;">Item Added To Cart</h4>
+  </div>
+  </div>
+  <div class="product_section_content">
+    <a href="productdesc.html"> <img class="image_action" src="images/tshirt3.png" alt="" style="width: 350px;height: 350px;"></a>
+    <h4>Men Printed, Typography Round <br> Neck Cotton Blend pink T-Shirt</h4>
+  <h4 style="font-weight: bold;">₹200</h4>
+  <div style="position: relative;bottom:20px;">
+    <button class="btn btn-primary" style="width: fit-content;" onclick="addtocart5()">ADD TO CART</button>
+    <img src="images/5star-removebg-preview.png" alt="" style="margin-left: 20px;width: 130px;">
+    <h4 id="product5" style="color: green;display: none;">Item Added To Cart</h4>
+  </div>
+    
+
+  </div>
+  
+  </div>
+<div>
+  <h1 style="text-align: center;text-decoration: underline;margin-left: 60px;margin-top: 40px;">Customer Reviews</h1>
+</div>
+<div class="reviews_section">
+  <div class="reviews_section_content">
+    <p >"As Women Who Value Our Health, We Are Here To Do What We <br> Do Best-Roll Up Our Sleeves To Get It Done Right"</p>
+    <img src="images/4star-removebg-preview.png" alt="" style="margin-left: 20px;width: 110px;">
+    <p style="font-style: italic;">-Alisha Jico</p>
+  </div>
+  <div class="reviews_section_content">
+    <p >"Was a little nervous to order because company <br> out of USA. But boy am I glad I did"</p>
+    <img src="images/4star-removebg-preview.png" alt="" style="margin-left: 20px;width: 110px;">
+    <p style="font-style: italic;">-Bernice Levy</p>
+  </div>
+  <div class="reviews_section_content" style="margin-right: 80px;">
+    <p >"Thank you for having cute trendy <br> clothes that fit and look good"</p>
+    <img src="images/4star-removebg-preview.png" alt="" style="margin-left: 20px;width: 110px;">
+    <p style="font-style: italic;">-Kristy</p>
+  </div>
+ 
+</div>
+<div class="newsletterr" style="background-image: url(images/news.png);">
+<h1 style="color:white; font-size: 60px;">
+  Join Our <br> News Letter
+</h1>
+<div class="subscribe2">
+  <form action="">
+<p>Subscribe to Our Newsletter <br> for More Information</p>
+<p id="lastp"></p>
+<input id="lastemail"  type="text" style="background-color:rgb(166, 200, 166);height: 35px;border: 1px solid rgba(0, 0, 0, 0.342);border-radius: 5px;padding: 10px;" placeholder="Enter your Email" >
+<button type="button" id="lastbtn" class="btn btn-outline-primary" style="margin-bottom: 5px;" onclick="lastvalidate()">Send</button>
+<div>
+  <img src="images/facebook-app-symbol.png" alt="" style="height: 20px;width: 20px;">
+  <img src="images/instagram.png" alt="" style="height: 20px;width: 20px;margin-left: 10px;">
+  <img src="images/twitter.png" alt="" style="height: 20px;width: 20px; margin-left: 10px;">
+
+</div>
+</form>
+</div>
+<div class="subscribe1">
+  <p>We will provide reports about our latest events <br>
+    and other interesting things. We can confirm that <br>
+    this is not spam!
+    
+    </p>
+  </div>
+</div>
+<div class="last_section">
+
+<div style="display: flex;flex-wrap: wrap;">
+    <img src="images/copyright.png" alt="" style="height: 20px;width: 20px;align-self: center;">
+    <a style="display: inline;align-self: center;margin-left: 10px;align-self: center;">2023 All Rights Reserved</a>
+</div>
+<div style="display: flex;gap: 80px;flex-wrap: wrap;">
+  
+  <a style="align-self: center;">Help & Info</a>
+  <a style="align-self: center;">Terms & Privacy</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+<script src="js/script.js"></script>
+</body>
+</html>

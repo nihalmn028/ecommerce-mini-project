@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style</title>
+  <link rel="icon" href="images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/cartstyle.css">
+</head>
+<body>
+  <div class="main_container">
+  
+
+<div class="nav_section">
+<div class="nav_left">
+<img src="images/logo-removebg-preview.png" alt="" style="width: 100px;">
+</div>
+<div class="nav_center">
+  <a href="index.html" class="nav_center_content">HOME</a>
+  <a href="products.html" class="nav_center_content">SHOP</a>
+  <a href="aboutus.html" class="nav_center_content">ABOUT US</a>
+  <a href="contactus.html" class="nav_center_content">CONTACT</a>
+</div>
+<div class="nav_right">
+  <input type="text" id="searchbox" placeholder="Enter Product Name" style="padding-left: 10px;background-color: transparent;border: 1px solid rgba(0, 0, 0, 0.457);display: none;">
+  <img class="searchicon" src="images/search icon.png" alt="" style="width: 22px; height: 22px;" onclick="searchboxshow()"> <a href="cart.html"> <img src="images/shop icon.png" alt="" style="width: 25px; height: 25px;"></a>
+</div>
+</div>
+<div class="cartsection" style="margin-top: 100px;">
+<div class="cartleft">
+<div style="display: flex;gap: 80px;background-color: rgb(231, 227, 227);justify-content: space-between;flex-wrap: wrap;">
+<p>Product</p>
+<p>Price</p>
+<p>Quantity</p>
+<p>Sub Total</p>
+
+</div>
+<div style="display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;">
+<img src="images/shirt1.png" alt="" style="width: 40px;height: 40px;">
+<p>₹1,637</p>
+<input type="number" class="input_number" name="" id="productcount" value="1" style="width: 45px;height: 35px;padding-left: 10px;" onchange="productcountchange()">
+<div><a>₹</a><p style="margin-right: 20px;display: inline;" id="subtotal">1637</p></div>
+
+</div>
+<hr style="height: 2px;background-color: black;">
+<div style="display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;">
+  <img src="images/shirt2.png" alt="" style="width: 40px;height: 40px;">
+  <p>₹1,200</p>
+  <input type="number" class="input_number" name="" id="productcount2" value="1" style="width: 45px;height: 35px;padding-left: 10px;" onchange="productcountchange2()">
+  <div><a>₹</a><p style="margin-right: 20px;display: inline;" id="subtotal2">1200</p></div>
+
+  
+  </div>
+<hr style="height: 2px;background-color: black;">
+<div>
+  <button class="btn btn-outline-primary" style="margin-top: 100px;border-radius: 50px;" onclick="updatecart()">Update Cart</button>
+</div>
+
+</div>
+
+<div class="cartright">
+<h1>Cart Total</h1>
+<hr style="height: 2px;width: 400px;">
+<h3 style="display: inline;">Sub Total</h3>
+<h3 style="display: inline;margin-left: 200px;"  id="mainsubtotal">₹0</h3>
+<hr style="height: 2px;width: 400px;">
+<h3 style="display: inline;">Tax</h3>
+<h3 style="display: inline;margin-left: 280px;" id="tax">₹200</h3>
+<hr style="height: 2px;width: 400px;">
+<h3 style="display: inline;"> Total</h3>
+<h3 style="display: inline;margin-left: 260px;" id="total">₹0</h3>
+<br>
+<a href="checkout.html"><button class="btn btn-primary" style="border-radius: 50px;margin-top: 30px;">Procceed To Checkout</button></a>
+<hr style="height: 2px;width: 400px;">
+</div>
+</div>
+<div class="cartleft" style="width: fit-content;margin-top: 40px;width: 575px;">
+  <form action="">
+ <p id="couponp"></p>
+ <input type="text" placeholder="coupon code" style="padding: 10px;border-radius: 50px; " id="coupon">
+ <button class="btn btn-success" style="margin-left: 100px;border-radius: 50px;" onclick="apply()" type="button" id="coponbtn">Apply Coupon</button>
+</form>
+</div>
+<div class="newsletterr" style="background-image: url(images/news.png);">
+  <h1 style="color:white; font-size: 60px;">
+    Join Our <br> News Letter
+  </h1>
+  <div class="subscribe2">
+    <form action="">
+  <p>Subscribe to Our Newsletter <br> for More Information</p>
+  <p id="lastp"></p>
+  <input id="lastemail"  type="text" style="background-color:rgb(166, 200, 166);height: 35px;border: 1px solid rgba(0, 0, 0, 0.342);border-radius: 5px;padding: 10px;" placeholder="Enter your Email" >
+  <button type="button" id="lastbtn" class="btn btn-outline-primary" style="margin-bottom: 5px;" onclick="lastvalidate()">Send</button>
+  <div>
+    <img src="images/facebook-app-symbol.png" alt="" style="height: 20px;width: 20px;">
+    <img src="images/instagram.png" alt="" style="height: 20px;width: 20px;margin-left: 10px;">
+    <img src="images/twitter.png" alt="" style="height: 20px;width: 20px; margin-left: 10px;">
+  
+  </div>
+  </form>
+  </div>
+  <div class="subscribe1">
+    <p>We will provide reports about our latest events <br>
+      and other interesting things. We can confirm that <br>
+      this is not spam!
+      
+      </p>
+    </div>
+  </div>
+  <div class="last_section">
+  
+  <div style="display: flex;flex-wrap: wrap;">
+      <img src="images/copyright.png" alt="" style="height: 20px;width: 20px;align-self: center;">
+      <a style="display: inline;align-self: center;margin-left: 10px;align-self: center;">2023 All Rights Reserved</a>
+  </div>
+  <div style="display: flex;gap: 80px;flex-wrap: wrap;">
+    
+    <a style="align-self: center;">Help & Info</a>
+    <a style="align-self: center;">Terms & Privacy</a>
+  </div>
+  </div>
+
+</div>
+<script src="js/cartscript.js"></script>
+</body>
+</html>

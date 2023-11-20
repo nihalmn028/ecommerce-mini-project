@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style</title>
+  <link rel="icon" href="images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/checkoutstyle.css">
+</head>
+
+<body>
+  <div class="main_container" id="mainsection">
+
+
+    <div class="nav_section">
+      <div class="nav_left">
+        <img src="images/logo-removebg-preview.png" alt="" style="width: 100px;">
+      </div>
+      <div class="nav_center">
+        <a href="index.html" class="nav_center_content">HOME</a>
+        <a href="products.html" class="nav_center_content">SHOP</a>
+        <a href="aboutus.html" class="nav_center_content">ABOUT US</a>
+        <a href="contactus.html" class="nav_center_content">CONTACT</a>
+      </div>
+      <div class="nav_right">
+        <input type="text" id="searchbox" placeholder="Enter Product Name" style="padding-left: 10px;background-color: transparent;border: 1px solid rgba(0, 0, 0, 0.457);display: none;">
+        <img class="searchicon" src="images/search icon.png" alt="" style="width: 22px; height: 22px;" onclick="searchboxshow()">
+       <a href="cart.html"> <img src="images/shop icon.png" alt="" style="width: 25px; height: 25px;"></a>
+      </div>
+    </div>
+    <h1 style="margin-left: 100px;margin-top: 140px;">Check Out</h1>
+    <div style="display: flex;justify-content: space-between;margin-right: 100px;flex-wrap: wrap;">
+
+      <div style="margin-left: 100px;width: fit-content;">
+        <form action="">
+          <div style="display: flex;gap: 100px;position: relative;flex-wrap: wrap;">
+            
+            <div>
+              <p id="fnamep" style="position: absolute;"></p>
+              <br>
+              <label for="">First Name</label>
+              <br>
+              
+              <input id="fname" type="text">
+            </div>
+            
+            <div>
+              <p id="lnamep" style="position: absolute;"></p>
+              <br>
+              
+              <label for="">Last Name</label>
+              <br>
+              
+              <input id="lname" type="text">
+            </div>
+          </div>
+         
+          <label for="" style="margin-top: 20px;">Company Name(optional)</label>
+         
+          <input type="text" style="width: 100%;">
+          
+          <a id="countrypp" style="position: relative;top: 20px;"></a><br>
+          
+          <label for="" style="margin-top: 20px;">Country/Region*</label>
+          <select id="countryy" style="width: 100%;">
+            <option>Select</option>
+            <option value="Afghanistan">India</option>
+            <option value="Åland Islands">Åland Islands</option>
+            <option value="Albania">Albania</option>
+            <option value="Algeria">Algeria</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Angola">Angola</option>
+            <option value="Anguilla">Anguilla</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Aruba">Aruba</option>
+            <option value="Australia">Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Azerbaijan">Azerbaijan</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Bahrain">Bahrain</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Barbados">Barbados</option>
+            <option value="Belarus">Belarus</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Belize">Belize</option>
+            <option value="Benin">Benin</option>
+            <option value="Bermuda">Bermuda</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Bolivia">Others</option>
+          </select>
+          <a id="addressp" style="position: relative;top: 20px;"></a><br>
+          <label for="" style="margin-top: 20px;">Address</label>
+          
+          
+          <input id="address" type="text" style="width: 100%;height: 40px;">
+          <a id="postp" style="position: relative;top: 20px;"></a><br>
+          <label for="" style="margin-top: 20px;">Post code/ZIP</label>
+          
+          
+          <input id="post" type="text" style="width: 100%;">
+          <a id="cityp" style="position: relative;top: 20px;"></a><br>
+          <label for="" style="margin-top: 20px;">Town/City</label>
+          
+          
+          <input id="city" type="text" style="width: 100%;">
+          <a id="phonep" style="position: relative;top: 20px;"></a><br>
+          <label for="" style="margin-top: 20px;">Phone no:</label>
+          
+          
+          <input id="phone" type="number" style="width: 100%;">
+          <a id="emailp" style="position: relative;top: 20px;"></a><br>
+          <label for="" style="margin-top: 20px;">Email</label>
+          
+          
+          <input id="email" type="email" style="width: 100%;">
+          <h3 style="margin-top: 40px;">Additional infornmation</h3>
+          <label for="" style="margin-top: 20px;">Other Notes(optional)</label>
+          <br>
+          <p id="otherp"></p>
+          <input id="other" type="text" style="width: 100%;">
+          <br>
+          <button type="button" id="placeorder" class="btn btn-primary" style="margin-top:40px ;border-radius: 50px;" onclick="check()">Place Order</button>
+        </form>
+      </div>
+      <div>
+        <div style="background-color: rgb(231, 227, 227);width: fit-content;padding: 40px;margin-top: 100px;">
+          <h1>Your order </h1>
+          <div style="display: flex;gap: 180px;margin-top: 20px;flex-wrap: wrap;">
+            <h3>Product</h3>
+            <h3>Sub Total</h3>
+          </div>
+          <div style="display: flex;gap: 180px;margin-top: 20px;flex-wrap: wrap;">
+            <h5>Product title</h5>
+            <h5>1000</h5>
+          </div>
+          <hr style="height: 2px;width: 400px;">
+          <div style="display: flex;gap: 180px;margin-top: 20px;flex-wrap: wrap;">
+            <h5>Product title</h5>
+            <h5>1000</h5>
+          </div>
+          <hr style="height: 2px;width: 400px;">
+          <div style="display: flex;gap: 230px;margin-top: 20px;flex-wrap: wrap;">
+            <h3>Total</h3>
+            <h3> 2000</h3>
+          </div>
+
+        </div>
+        <div style="width: fit-content;">
+          <form action="">
+          <p style="display: inline;">Have A Coupon? </p>
+          <a id="pointer" style="text-decoration: none;font-weight: bold;color: black;" onclick="couponboxshow()">Click Here To Enter Your Code</a>
+          <p id="couponp" style="position: relative;top: 10px;"></p>
+            <input type="text" name="" id="couponenter" placeholder="Enter Your Coupon code" style="padding-left: 10px;border-radius: 50px;display: none;">
+            <button class="btn btn-success" style="margin-left: 20px;border-radius: 50px;display: none;" onclick="apply()" type="button" id="coponbtn">Apply Coupon</button>
+            <br>
+            <p style="color: green;display: none;" id="coponsubmited">Coupon Submitted</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="newsletterr" style="background-image: url(images/news.png);">
+  <h1 style="color:white; font-size: 60px;">
+    Join Our <br> News Letter
+  </h1>
+  <div class="subscribe2">
+    <form action="">
+  <p>Subscribe to Our Newsletter <br> for More Information</p>
+  <p id="lastp"></p>
+  <input id="lastemail"  type="text" style="background-color:rgb(166, 200, 166);height: 35px;border: 1px solid rgba(0, 0, 0, 0.342);border-radius: 5px;padding: 10px;" placeholder="Enter your Email" >
+  <button type="button" id="lastbtn" class="btn btn-outline-primary" style="margin-bottom: 5px;" onclick="lastvalidate()">Send</button>
+  <div>
+    <img src="images/facebook-app-symbol.png" alt="" style="height: 20px;width: 20px;">
+    <img src="images/instagram.png" alt="" style="height: 20px;width: 20px;margin-left: 10px;">
+    <img src="images/twitter.png" alt="" style="height: 20px;width: 20px; margin-left: 10px;">
+  
+  </div>
+  </form>
+  </div>
+  <div class="subscribe1">
+    <p>We will provide reports about our latest events <br>
+      and other interesting things. We can confirm that <br>
+      this is not spam!
+      
+      </p>
+    </div>
+  </div>
+  <div class="last_section">
+  
+  <div style="display: flex;flex-wrap: wrap;">
+      <img src="images/copyright.png" alt="" style="height: 20px;width: 20px;align-self: center;">
+      <a style="display: inline;align-self: center;margin-left: 10px;align-self: center;">2023 All Rights Reserved</a>
+  </div>
+  <div style="display: flex;gap: 80px;flex-wrap: wrap;">
+    
+    <a style="align-self: center;">Help & Info</a>
+    <a style="align-self: center;">Terms & Privacy</a>
+  </div>
+  </div>
+
+  </div>
+  <div class="orderplaced" id="orderplacesection">
+    <img src="images/ticksuccess.png" alt="" style="height: 60px;width: 60px;">
+    <h1 style="color: green;margin-top: 20px;">ORDER SUCCESSFULL</h1>
+    <h2>Thank You So Much For Your Order</h2>
+    <a href="cart.html"><button class="btn btn-primary" style="margin-top: 20px;">GOTO CART</button></a>
+    <h2></h2>
+      </div>
+  <script src="js/checkoutscript.js"></script>
+</body>
+
+</html>
